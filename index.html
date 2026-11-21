@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" class=""><head><script>window.livecodes = window.livecodes || {};</script><title>Untitled Project</title><meta name="title" content="Untitled Project"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="./style.css"><script src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js" async=""></script><script type="importmap">{
+  "imports": {}
+}</script></head><body><div class="hud">
+  <h1>Doppler Proximity Scope</h1>
+  <div class="controls">
+    <button id="startBtn" type="button">Start &amp; Calibrate</button>
+    <label>Noise Gate: <input id="gate" type="range" min="15" max="120" value="45"></label>
+  </div>
+  <div id="readout">STANDBY - SET VOLUME TO 75%</div>
+</div>
+<canvas id="scope" width="460" height="460"></canvas>
+<script src="./script.js" type="module"></script></body></html>
