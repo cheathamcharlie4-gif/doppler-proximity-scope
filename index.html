@@ -3,12 +3,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="./style.css"><script src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js" async=""></script><script type="importmap">{
   "imports": {}
 }</script></head><body><div class="hud">
-  <h1>Doppler Proximity Scope</h1>
+  <h1>High-Speed Strike &amp; Punch Scope</h1>
   <div class="controls">
     <button id="startBtn" type="button">Start &amp; Calibrate</button>
-    <label>Noise Gate: <input id="gate" type="range" min="15" max="120" value="45"></label>
+    <button id="recalBtn" type="button">Re-Calibrate</button>
+    <label>Impact Tone: <input id="freqSlider" type="range" min="0" max="500" step="5" value="0"> <span id="freqVal">0</span> Hz</label>
   </div>
-  <div id="readout">STANDBY - SET VOLUME TO 75%</div>
+  <div class="controls">
+    <label>Punch Gate: <input id="gate" type="range" min="10" max="120" value="25"> <span id="gateVal">25</span></label>
+    <label>Min Speed: <input id="speedSlider" type="range" min="0" max="450" step="10" value="110"> <span id="speedVal">110</span> Hz</label>
+  </div>
+  <div id="signalBar">MIC CARRIER SIGNAL: --</div>
+  <div id="readout">STANDBY - SET VOLUME TO 85% &amp; CLICK START</div>
 </div>
 <canvas id="scope" width="460" height="460"></canvas>
 <script src="./script.js" type="module"></script></body></html>
